@@ -1,0 +1,13 @@
+.container(style='margin-top: 30px')
+  .row
+    .col-xs-4.col-xs-offset-4
+      h3.text-center Log In
+      form(name='vm.LoginForm' ng-submit='vm.authorize()' novalidate)
+        .form-group
+          label(for='login') Username:
+          input#login.form-control(name='login' type='login' ng-model='vm.login' ng-required='true')
+        .form-group
+          label(for='password') Password:
+          input#password.form-control(name='password' type='password' ng-model='vm.password' ng-required='true')
+        .form-group
+          button.btn.btn-primary(type='submit' ng-disabled='vm.LoginForm.$invalid') Log In

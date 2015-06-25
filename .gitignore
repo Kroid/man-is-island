@@ -1,0 +1,14 @@
+#angular
+/angular/node_modules
+/angular/app/bower_components
+/angular/.tmp
+/angular/.dist
+/angular/dist.zip
+
+#rails
+/railsconfig/database.yml
+/rails/config/secrets.yml
+/rails/.bundle
+/rails/log/*
+!/rails/log/.keep
+/rails/tmp

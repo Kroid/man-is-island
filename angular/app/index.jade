@@ -1,0 +1,23 @@
+doctype html
+html(ng-app='app')
+  head
+    title Man is island
+    base(href="/")
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    //- inject:css
+    //- endinject
+  body
+    ng-view
+    div(growl)
+
+    //- inject:js
+    //- endinject
+
+    //- fastclick
+    script.
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
